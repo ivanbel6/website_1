@@ -1,0 +1,190 @@
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   
+}
+
+@media (min-width : 1500px){
+    .img{
+    display: inline-block;
+/*    float: left*/
+    flex: 6;
+}
+.img img{
+    width: 32vw;
+    height: 45vh;
+}
+.text{
+    flex: 3;
+    min-width: 54vw;
+    line-height: 2rem;
+    padding: 10px;
+}
+.text p{
+    text-align: left;
+}
+.wrap{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.empty{
+    flex: 1;
+    
+}
+.text h1{
+    font-size: 1.5rem;
+}
+.text h2{
+    font-size: 1.2rem;
+}
+}
+@media (max-width : 1500px){
+    .img{
+    display: inline-block;
+    float: left;
+    flex: ;
+}
+.img img{
+    max-height: 800px;
+    width: 100vw;
+    height: 100vh;
+
+}
+.text{
+    flex: ;
+    min-width: 50vw;
+    line-height: 2.5rem;
+ 
+}
+.text p{
+    text-align: left;
+}
+.wrap{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    
+}
+.empty{
+    display: none;
+}
+.text h1{
+    font-size: 1.5rem;
+}
+.text h2{
+    font-size: 1.2rem;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section{
+    text-align: center;
+}
+div {
+  color: #727272;
+  text-align: center;
+}
+p {
+  text-align: center;
+  margin: 16px;
+  font-size: 96px;
+  color: #ccc;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 1s ease-in-out;
+  position: relative;
+}
+
+
+nav {
+  margin: 25px;
+  background: #f9f9f9;
+  padding: 16px;
+}
+nav .menuItems {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+nav .menuItems li {
+  margin: 50px;
+}
+nav .menuItems li a {
+  text-decoration: none;
+  color: #8f8f8f;
+  font-size: 24px;
+  font-weight: 400;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+  text-transform: uppercase;
+  
+}
+nav .menuItems li a::before {
+  content: attr(data-item);
+  transition: 0.5s;
+  color: #8254ff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 0;
+  overflow: hidden;
+}
+nav .menuItems li a:hover::before {
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+}
+
+footer {
+/*  position: absolute;*/
+  font-size: 12px;
+  bottom:0;
+  width: 100%;
+  height: 40px;
+  line-height: 60px;
+  font-size: 14px;
+  background-color: #f1f1f1;
+  color: #000000;
+  text-align: center;
+  
+}
+footer a {
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 1px solid;
+}
+footer a:hover {
+  border-bottom: 1px transparent;
+}
